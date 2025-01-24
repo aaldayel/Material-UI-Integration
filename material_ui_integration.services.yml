@@ -1,0 +1,3 @@
+services:
+  material_ui_integration.react_renderer:
+    class: Drupal\material_ui_integration\Service\ReactRenderer

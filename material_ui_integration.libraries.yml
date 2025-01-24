@@ -1,0 +1,11 @@
+material_ui:
+  js:
+    https://cdn.jsdelivr.net/npm/react@17/umd/react.development.js: { type: external, minified: false }
+    https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.development.js: { type: external, minified: false }
+    js/react_app/index.js: {}
+  css:
+    theme:
+      css/material_ui_styles.css: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

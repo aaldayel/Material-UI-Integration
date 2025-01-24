@@ -1,0 +1,27 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * @file
+ * Contains hooks and callback functions for the Material UI Integration module.
+ */
+/**
+ * Implements hook_page_attachments().
+ */
+function material_ui_integration_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'material_ui_integration/material_ui';
+}
+
+/**
+ * Implements hook_help().
+ */
+function material_ui_integration_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.material_ui_integration':
+      return '<p>The Material UI Integration module loads Material UI assets and provides helpers for React components.</p>';
+  }
+}
+
+
+

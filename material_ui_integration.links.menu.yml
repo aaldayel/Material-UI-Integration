@@ -1,0 +1,6 @@
+material_ui_integration.settings:
+  title: 'Material UI Integration'
+  description: 'Configure Material UI Integration settings.'
+  parent: system.admin_config_development
+  route_name: material_ui_integration.settings
+  weight: 10

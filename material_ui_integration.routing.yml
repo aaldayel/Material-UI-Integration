@@ -1,0 +1,15 @@
+material_ui_integration.react_render:
+  path: '/react/render'
+  defaults:
+    _controller: '\Drupal\material_ui_integration\Controller\ReactRenderController::render'
+    _title: 'React Render'
+  requirements:
+    _permission: 'access content'
+
+material_ui_integration.settings:
+  path: '/admin/config/development/material-ui-integration'
+  defaults:
+    _form: '\Drupal\material_ui_integration\Form\MaterialUISettingsForm'
+    _title: 'Material UI Integration Settings'
+  requirements:
+    _permission: 'administer site configuration'
